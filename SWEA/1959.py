@@ -24,4 +24,5 @@ for k in range(T):
             sum_list.append(sum_num)
     
     print("#", k+1," ", max(sum_list),sep="")
+    # print('#{0} {1}'.format(max(sum_list),result))
     sum_list = []
