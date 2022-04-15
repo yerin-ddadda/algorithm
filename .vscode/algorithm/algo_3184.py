@@ -1,4 +1,4 @@
-R,C = map(int, input().split())
+'''R,C = map(int, input().split())
 field = []
 
 isvisited = []
@@ -57,9 +57,9 @@ for i in range(R):
       total_sheep += sheep
       total_wolf += wolf
         
-print(total_sheep, "", total_wolf)
+print(total_sheep, "", total_wolf)'''
 
-'''def location(i,j): #Dfs
+def location(i,j): #Dfs
   global sheep
   global wolf
   isvisited[i][j] = True
@@ -117,4 +117,4 @@ for i in range(1):
   print_list.append(total_sheep)
   print_list.append(total_wolf)
 for i in range(2):
-  print(print_list[i], end=" ")'''
+  print(print_list[i], end=" ")

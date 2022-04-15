@@ -17,3 +17,4 @@ def solution(s):
                 cnt=1
         
         answer = min(answer, len(res))
+    return answer

@@ -111,12 +111,6 @@ def bfs():
 #                 board[i][j]=0
 
 
-
-
-
-
-
-
 def makewall(idx, count):
     if count == 3:
         bfs()

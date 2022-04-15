@@ -1,12 +1,10 @@
-def solution(participant, completion):
-    answer = {}
-    for i in participant:
-        answer[i] = answer.get(i,0) + 1
-    for j in completion:
-        answer[j] -= 1
-    for k in answer:
-        if answer[k]:
-            return k
+import collections
 
-a = solution(["leo", "kiki", "eden"], ["eden", "kiki"])
-print(a)
+def solution(participant, completion):
+    print(collections.Counter(participant))
+    print(collections.Counter(completion))
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    print(list(answer.keys())[0])
+    return list(answer.keys())[0]
+
+solution(["mislav", "stanko", "mislav", "ana"],["stanko", "ana", "mislav"])
